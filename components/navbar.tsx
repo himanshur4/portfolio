@@ -36,7 +36,7 @@ export function Navbar() {
 
   return (
     <header
-      className="sticky top-0 z-40 w-full transition-colors duration-300  bg-bg"
+      className="sticky top-0 z-40 w-full transition-colors duration-300  bg-bg border border-b"
     >
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-4 md:px-8">
         <a

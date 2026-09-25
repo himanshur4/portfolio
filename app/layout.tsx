@@ -26,7 +26,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${personal.name} — ${personal.role}`,
+  title: `${personal.name} - Portfolio`,
   description: personal.summary,
   icons: {
     icon: "/hLogo.png",
