@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 250 250 248;
+  --surface: 241 240 236;
+  --surface-hover: 233 232 227;
+  --ink: 19 20 24;
+  --ink-soft: 94 96 104;
+  --line: 224 223 217;
+  --accent: 239 68 68;
+  --accent-soft: 254 226 226;
+  --accent-ink: 255 255 255;
+}
+
+.dark {
+  --bg: 12 13 16;
+  --surface: 21 22 27;
+  --surface-hover: 29 30 36;
+  --ink: 240 240 238;
+  --ink-soft: 154 156 166;
+  --line: 37 38 45;
+  --accent: 248 113 113;
+  --accent-soft: 69 10 10;
+  --accent-ink: 12 13 16;
+}
+
+* {
+  border-color: rgb(var(--line));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--ink));
+}
+
+::selection {
+  background-color: rgb(var(--accent) / 0.25);
+  color: rgb(var(--ink));
+}
+
+/* Scrollbar - kept minimal, not a focal point */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--line));
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
