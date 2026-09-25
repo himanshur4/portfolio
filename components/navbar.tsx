@@ -73,7 +73,7 @@ export function Navbar() {
             href={personal.resumeUrl}
             target="_blank"
             rel="noreferrer"
-            className="hidden md:inline-flex rounded-full border border-line px-4 py-1.5 text-[15px] font-medium text-ink transition-colors hover:border-accent hover:text-accent"
+            className="hidden md:inline-flex rounded-full border border-line px-4 py-1.5 text-[15px] font-medium text-ink transition-colors hover:border-accent hover:text-accent font-mono"
           >
             Resume
           </a>

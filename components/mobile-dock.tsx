@@ -54,32 +54,33 @@ export function MobileDock() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center shadow-2xl ">
-      <nav
-        aria-label="Section navigation"
-        className="fixed bottom-8 z-50 flex justify-between items-center md:hidden"
+    <nav
+      aria-label="Section navigation"
+      className="fixed bottom-6 left-1/2 z-50 flex w-[95vw] max-w-fit -translate-x-1/2 items-center justify-center md:hidden"
+    >
+      <div 
+        className="flex w-full items-center justify-between overflow-x-auto rounded-3xl border bg-white/90 px-1 py-1 shadow-2xl shadow-black/10 backdrop-blur-md dark:border-line dark:bg-black/90 [&::-webkit-scrollbar]:hidden" 
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <div className="flex rounded-3xl border dark:bg-black bg-white px-1 py-1 shadow-2xl shadow-black/4 backdrop-blur-md">
-          {dockItems.map(({ id, label }) => {
-            const isActive = active === id;
-            return (
-              <a
-                key={id}
-                href={`#${id}`}
-                aria-current={isActive ? "true" : undefined}
-                className={cn(
-                  "flex flex-1 items-center justify-center rounded-3xl text-sm transition-colors px-3 py-2 font-mono",
-                  isActive
-                    ? "bg-red-800 shadow-sm text-gray-200"
-                    : "dark:text-gray-300  active:bg-surface-hover",
-                )}
-              >
-                {label}
-              </a>
-            );
-          })}
-        </div>
-      </nav>
-    </div>
+        {dockItems.map(({ id, label }) => {
+          const isActive = active === id;
+          return (
+            <a
+              key={id}
+              href={`#${id}`}
+              aria-current={isActive ? "true" : undefined}
+              className={cn(
+                "flex items-center justify-center whitespace-nowrap rounded-3xl px-2.5 py-1.5 font-mono text-[11px] transition-colors sm:px-3 sm:py-2 sm:text-sm",
+                isActive
+                  ? "bg-red-800 text-white shadow-sm dark:text-gray-200"
+                  : "text-ink-soft hover:text-ink active:bg-surface-hover dark:text-gray-300",
+              )}
+            >
+              {label}
+            </a>
+          );
+        })}
+      </div>
+    </nav>
   );
 }

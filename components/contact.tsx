@@ -12,7 +12,7 @@ export function Contact() {
         <h2 className="mx-auto mt-4 max-w-lg text-balance font-display text-3xl font-medium tracking-tight text-ink md:text-4xl">
           Open to SDE and SWE roles - let&apos;s talk.
         </h2>
-        <p className="mx-auto mt-3 max-w-md text-sm text-ink-soft">
+        <p className="mx-auto mt-3 max-w-md text-sm text-ink-soft font-mono">
           Reach out directly or find me on LinkedIn / GitHub. I usually reply
           within a day.
         </p>

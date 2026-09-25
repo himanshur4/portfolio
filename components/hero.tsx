@@ -32,7 +32,7 @@ export function Hero() {
       <div className="mt-9 flex flex-wrap items-center gap-3 animate-fade-up opacity-0 [animation-delay:320ms]">
         <a
           href="#contact"
-          className="group inline-flex items-center gap-1.5 rounded-full bg-red-800 text-white shadow-sm dark:text-gray-200 px-5 py-2.5 text-sm font-medium transition-transform hover:-translate-y-0.5"
+          className="group inline-flex items-center gap-1.5 rounded-full bg-red-800 text-white shadow-sm dark:text-gray-200 px-5 py-2.5 text-sm font-medium transition-transform hover:-translate-y-0.5 font-mono"
         >
           Contact
           <ArrowUpRight
@@ -44,7 +44,7 @@ export function Hero() {
           href={personal.resumeUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-accent hover:text-accent"
+          className="inline-flex items-center gap-1.5 rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-accent hover:text-accent font-mono"
         >
           View resume
         </a>
