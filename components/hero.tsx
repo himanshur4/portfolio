@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto flex min-h-[88vh] max-w-content flex-col justify-center px-6 pb-16 pt-24 md:px-8 md:pt-28"
+      className="mx-auto flex min-h-[88vh] max-w-content flex-col justify-center px-6 pb-16 pt-12 md:px-8 md:pt-28"
     >
       <div className="animate-fade-up opacity-0 [animation-delay:0ms]">
         <div className="inline-flex items-center gap-2 rounded-md border border-line bg-surface px-3 py-1.5 font-mono text-[12px] dark:text-gray-400 text-gray-800">

@@ -57,7 +57,7 @@ export function MobileDock() {
     <div className="flex items-center justify-center shadow-2xl ">
       <nav
         aria-label="Section navigation"
-        className="fixed bottom-4 z-50 flex justify-between items-center md:hidden"
+        className="fixed bottom-8 z-50 flex justify-between items-center md:hidden"
       >
         <div className="flex rounded-3xl border dark:bg-black bg-white px-1 py-1 shadow-2xl shadow-black/4 backdrop-blur-md">
           {dockItems.map(({ id, label }) => {
@@ -68,7 +68,7 @@ export function MobileDock() {
                 href={`#${id}`}
                 aria-current={isActive ? "true" : undefined}
                 className={cn(
-                  "flex flex-1 items-center justify-center rounded-3xl text-md font-medium transition-colors px-3 py-2",
+                  "flex flex-1 items-center justify-center rounded-3xl text-sm transition-colors px-3 py-2 font-mono",
                   isActive
                     ? "bg-red-800 shadow-sm text-gray-200"
                     : "dark:text-gray-300  active:bg-surface-hover",

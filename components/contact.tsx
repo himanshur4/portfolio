@@ -46,7 +46,7 @@ export function Contact() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-800 dark:text-gray-200 transition-colors hover:bg-surface-hover hover:text-ink"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-gray-800 dark:text-gray-200 transition-colors hover:bg-surface-hover hover:text-ink font-mono"
           >
             <Linkedin size={18} strokeWidth={1.75} />
           </a>
