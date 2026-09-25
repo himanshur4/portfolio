@@ -10,7 +10,7 @@ export function Contact() {
       <div className="rounded-3xl border border-line bg-surface px-6 py-14 text-center md:px-16 md:py-20">
         <span className="font-mono text-sm text-accent">Contact</span>
         <h2 className="mx-auto mt-4 max-w-lg text-balance font-display text-3xl font-medium tracking-tight text-ink md:text-4xl">
-          Open to SDE and SWE roles - let's talk.
+          Open to SDE and SWE roles - let&apos;s talk.
         </h2>
         <p className="mx-auto mt-3 max-w-md text-sm text-ink-soft">
           Reach out directly or find me on LinkedIn / GitHub. I usually reply
